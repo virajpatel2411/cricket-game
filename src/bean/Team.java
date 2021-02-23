@@ -7,7 +7,7 @@ public class Team {
 	private String name;
 
 	private String captain;
-	
+
 	public String getCaptain() {
 		return captain;
 	}

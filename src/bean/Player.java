@@ -32,12 +32,11 @@ public class Player {
 		this.playerType = playerType;
 	}
 
-	public Player setPlayerDetails(String name, String age, String playerType)
-	{
+	public Player setPlayerDetails(String name, String age, String playerType) {
 		this.name = name;
 		this.age = age;
 		this.playerType = playerType;
 		return this;
 	}
-	
+
 }

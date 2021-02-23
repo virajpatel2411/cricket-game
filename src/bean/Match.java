@@ -2,21 +2,27 @@ package bean;
 
 public class Match {
 
-	// 20 Over match
-	
 	private Team teamA, teamB;
 
-	private int toss; // 0 - Team A ... 1 - Team B
+	private int toss;
 
 	private String tossChoice;
 
-	private String firstBattingTeam;
+	private Team firstBattingTeam, firstBowlingTeam;
 
-	public String getFirstBattingTeam() {
+	public Team getFirstBowlingTeam() {
+		return firstBowlingTeam;
+	}
+
+	public void setFirstBowlingTeam(Team firstBowlingTeam) {
+		this.firstBowlingTeam = firstBowlingTeam;
+	}
+
+	public Team getFirstBattingTeam() {
 		return firstBattingTeam;
 	}
 
-	public void setFirstBattingTeam(String firstBattingTeam) {
+	public void setFirstBattingTeam(Team firstBattingTeam) {
 		this.firstBattingTeam = firstBattingTeam;
 	}
 

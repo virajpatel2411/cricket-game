@@ -8,6 +8,16 @@ public class ScoreCard {
 
 	private int balls;
 
+	public ScoreCard() {
+
+	}
+
+	public ScoreCard(String name, int runs, int balls) {
+		this.name = name;
+		this.runs = runs;
+		this.balls = balls;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -30,6 +40,11 @@ public class ScoreCard {
 
 	public void setBalls(int balls) {
 		this.balls = balls;
+	}
+
+	@Override
+	public String toString() {
+		return this.name + " : " + this.runs + " ( " + this.balls + " )";
 	}
 
 }
